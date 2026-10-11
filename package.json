@@ -1,21 +1,31 @@
 {
   "name": "gh-activity",
   "private": true,
+  "homepage": "https://gh-activity.netlify.app/",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/gh-activity/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/gh-activity.git"
+  },
+  "license": "MIT",
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "type": "module",
   "scripts": {
     "astro": "astro",
     "build": "astro build",
+    "check": "astro check",
     "dev": "astro dev",
-    "preview": "astro preview",
-    "start": "astro dev",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "knip": "knip",
     "lint": "oxlint",
+    "preview": "astro preview",
+    "start": "astro dev",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "test:e2e": "pnpm build && playwright test",
-    "check": "astro check"
+    "test:e2e": "pnpm build && playwright test"
   },
   "dependencies": {
     "@astrojs/react": "^7.0.0",
@@ -29,28 +39,18 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "@types/node": "^26.6.4",
-    "typescript": "^6.0.3",
     "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.63.0",
+    "@trivago/prettier-plugin-sort-imports": "6.0.2",
+    "@types/node": "^26.6.4",
     "@vitest/coverage-v8": "^5.0.3",
     "knip": "^6.39.0",
     "oxlint": "^1.86.0",
-    "vitest": "^5.0.3",
-    "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "prettier": "3.9.9",
-    "prettier-plugin-astro": "1.1.0"
+    "prettier-plugin-astro": "1.1.0",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.3"
   },
-  "homepage": "https://gh-activity.netlify.app/",
-  "bugs": {
-    "url": "https://github.com/trueberryless-org/gh-activity/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/trueberryless-org/gh-activity.git"
-  },
-  "license": "MIT",
-  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "packageManager": "pnpm@11.28.0",
   "engines": {
     "node": ">=24"
